@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 98vh;
+}
+
+header{
+    background-color: rgba(245, 245, 220, 0.722);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+header > h1{
+    text-align: center;
+}
+
+main{
+    height: 50vh;
+    padding: 10px;
+    background-image: linear-gradient(lightblue, white);
+    max-width: 650px;
+    margin: auto;
+    border: 1px dashed black;
+}
+
+main > h2{
+    padding: 15px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+main > form > label{
+    font-weight: 700;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+main > form > input{
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+    border: solid 2px black;
+}
+
+main > form > input#submit{
+    height: 20px;
+    width: 100px;
+    padding: 20px;
+    vertical-align: middle;
+    padding-top: 10px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+main > form > input#submit:hover{
+    background-color: lightcyan;
+    cursor: pointer;
+    padding-top: 13px;
+    height: 40px;
+    width: 115px;
+    transition: .2s;
+}
+
+main > form > span.warning{
+    font-size: .6em;
+    margin-left: 30px;
+}
+
+footer{
+    background-color: rgba(170, 170, 170, 0.496);
+    vertical-align: text-bottom;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+footer > p{
+    text-align: center;
+}
+
+footer > p > a{
+    color: black;
+    text-decoration: none;
+}
