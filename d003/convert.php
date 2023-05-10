@@ -10,9 +10,12 @@
 <body>
     <h1>Desafio 003</h1>
     <?php 
+        // Bibilioteca de internacionalização
+
         $r = $_GET["reais"];
         $usd = $r / 5.22;
-        echo "<p>O valor R$$r corresponde a USD$usd</p>"
+        $padrao = numfmt_create('pt_BR', NumberFormatter::CURRENCY);
+        echo "O valor ". numfmt_format_currency($padrao, $r, 'BRL'). " corresponde a " .numfmt_format_currency($padrao, $usd, 'USD').'.';
     ?>
 </body>
 </html>
